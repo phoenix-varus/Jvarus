@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+
+	<!-- <constant name="struts.devMode" value="true" /> -->
+	<!-- 这一句主要功能在修改代码后是不需要重启tomcat -->
+
+	<package name="actions" namespace="/actions" extends="struts-default">
+		<!-- action的内容是指定方法名。 -->
+		<action name="*" class="userController" method="{1}">
+			<result name="success">/getUserInfo.jsp</result>
+		</action>
+	</package>
+
+</struts>
+	

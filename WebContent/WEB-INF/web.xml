@@ -18,6 +18,12 @@
 	<!-- <context-param> <param-name>contextConfigLocation</param-name> <param-value>/WEB-INF/applicationContext-*.xml,classpath*:applicationContext-*.xml</param-value> 
 		<param-value>classpath:beans.xml</param-value> </context-param> -->
 
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/spring-context*.xml</param-value>
+	</context-param>
+
 	<!-- spring编码配置 -->
 	<filter>
 		<filter-name>encodingFilter</filter-name>

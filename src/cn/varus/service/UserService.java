@@ -1,7 +1,19 @@
 package cn.varus.service;
 
-import cn.varus.entity.User;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
-public interface UserService {
-	public User getUserInfo();
+import cn.varus.dao.UserDao;
+import cn.varus.entity.User;
+import cn.varus.service.UserService;
+
+@Component
+public class UserService {
+	@Autowired
+	private UserDao userDao;
+
+	public User getUserInfo() {
+		User user = userDao.getUserInfo();
+		return user;
+	}
 }

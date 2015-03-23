@@ -13,6 +13,8 @@
 		<action name="*" class="userController" method="{1}">
 			<result name="success">/getUserInfo.jsp</result>
 		</action>
+	<!-- <action name="*" class="activitiController" method="{1}"> <result name="success">/test.jsp</result> 
+		</action> -->
 	</package>
 
 </struts>

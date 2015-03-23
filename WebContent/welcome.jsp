@@ -8,6 +8,6 @@
 </head>
 <body>
 	Welcome to Jvarus!
-	<a href="actions/getUserInfo">OK</a>
+	<a href="actions/activitiTest">OK</a>
 </body>
 </html>
